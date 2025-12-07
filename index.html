@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>norius // visit</title>
+    <meta name="description" content="norius personal landing page">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Fonts: JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor Elements -->
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <canvas id="starfield"></canvas>
+    
+    <div id="toast-container"></div>
+
+    <main class="interface">
+        <div class="card" id="tilt-card">
+            <div class="profile-header">
+                <div class="avatar-wrapper">
+                    <img src="https://ui-avatars.com/api/?name=norius&background=000000&color=ffffff&size=128&bold=true" alt="norius" id="avatar">
+                    <div id="status-dot" class="status offline" title="Discord Status"></div>
+                </div>
+                <div class="user-info">
+                    <h1 class="glitch" data-text="norius">norius</h1>
+                    <div class="local-time-container">
+                        <i class="fa-regular fa-clock"></i>
+                        <span id="local-time">--:--</span>
+                        <span class="time-label">VVO</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Status Widget -->
+            <div id="activity-container" class="hidden">
+                <div class="activity-icon">
+                    <img id="activity-img" src="" alt="Activity">
+                    <i id="activity-default-icon" class="fa-solid fa-gamepad"></i>
+                </div>
+                <div class="activity-details">
+                    <span id="activity-name" class="act-name">Chilling</span>
+                    <span id="activity-state" class="act-state">No active status</span>
+                    <span id="activity-time" class="act-time"></span>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="links-grid">
+                <!-- Telegram -->
+                <div class="social-row">
+                    <a href="https://t.me/nozzw" target="_blank" class="social-btn telegram link-area">
+                        <div class="icon-box"><i class="fa-brands fa-telegram"></i></div>
+                        <div class="btn-text">
+                            <span class="label">Telegram</span>
+                            <span class="handle">@nozzw</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                    </a>
+                    <button class="copy-btn" onclick="copyToClipboard('@nozzw', 'Telegram Handle Copied!')" aria-label="Copy Telegram Handle">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+
+                <!-- Discord -->
+                <div class="social-row">
+                    <a href="https://discord.com/users/489395225681461270" target="_blank" class="social-btn discord link-area">
+                        <div class="icon-box"><i class="fa-brands fa-discord"></i></div>
+                        <div class="btn-text">
+                            <span class="label">Discord</span>
+                            <span class="handle">nozw</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                    </a>
+                    <button class="copy-btn" onclick="copyToClipboard('nozw', 'Discord Username Copied!')" aria-label="Copy Discord Username">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+
+                <!-- Steam -->
+                <div class="social-row">
+                    <a href="https://steamcommunity.com/id/nozwno" target="_blank" class="social-btn steam link-area">
+                        <div class="icon-box"><i class="fa-brands fa-steam"></i></div>
+                        <div class="btn-text">
+                            <span class="label">Steam</span>
+                            <span class="handle">nozwno</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+                    </a>
+                    <button class="copy-btn" onclick="copyToClipboard('nozwno', 'Steam ID Copied!')" aria-label="Copy Steam ID">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
