@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether // Neural Audio Interface</title>
+    <meta name="description" content="A next-generation music player exploring the boundaries of neural audio interfaces.">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <nav>
+        <div class="logo">
+            <i data-lucide="disc"></i> Aether
+        </div>
+        <div class="nav-links">
+            <a href="https://github.com/noriusW/Aether" target="_blank">GitHub</a>
+            <a href="../index.html">norius.ru</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="badge">Version 1.0 Beta</div>
+        <h1>The Future of<br>SoundCloud Exploration</h1>
+        <p class="subtitle">Aether is a desktop client reimagined. Glassmorphic design, neural radio recommendations, and seamless integration with your digital life.</p>
+        
+        <div class="cta-group">
+            <a href="downloader.html" class="btn btn-primary">
+                <i data-lucide="download"></i> Download for Windows
+            </a>
+            <a href="https://github.com/noriusW/Aether" class="btn btn-secondary">
+                <i data-lucide="github"></i> Source Code
+            </a>
+        </div>
+    </section>
+
+    <div class="app-preview">
+        <!-- Placeholder for app screenshot, using a gradient for now -->
+        <div style="width:100%; height:100%; background: linear-gradient(45deg, #1a1a1a, #0a0a0a); display: flex; align-items: center; justify-content: center; color: white; opacity: 0.5;">
+            <span style="letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.8rem;">Interface Preview</span>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="radio"></i></div>
+            <h3>Neural Radio</h3>
+            <p>Smart algorithms that generate infinite wave mixes based on your current vibe. Discover hidden gems on SoundCloud.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="layers"></i></div>
+            <h3>Glass UI</h3>
+            <p>A stunning, distraction-free interface with real-time blur and amoled-friendly themes that fit your desktop aesthetic.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="link"></i></div>
+            <h3>Discord RPC</h3>
+            <p>Share what you're listening to with rich presence integration. Let friends explore your frequencies.</p>
+        </div>
+    </section>
+
+    <!-- New Tech Section -->
+    <section style="padding: 6rem 2rem; max-width: 1200px; width: 100%; z-index: 10; text-align: left;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; letter-spacing: -0.02em;">Engineered for<br>Pure Sound.</h2>
+                <p style="color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 2rem;">Aether utilizes a custom-built IPC bridge for Discord and a multi-threaded audio pipeline to ensure zero latency and crystal clear streaming directly from the clouds.</p>
+                <ul style="list-style: none; space-y: 1rem;">
+                    <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i data-lucide="check-circle" style="color: #6366f1; width: 18px;"></i> Native performance with Electron</li>
+                    <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><i data-lucide="check-circle" style="color: #6366f1; width: 18px;"></i> Low memory footprint</li>
+                    <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check-circle" style="color: #6366f1; width: 18px;"></i> Real-time frequency analysis</li>
+                </ul>
+            </div>
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 2rem; padding: 3rem; backdrop-filter: blur(20px);">
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #6366f1; margin-bottom: 1rem;">// Neural Discovery Module</div>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: rgba(255,255,255,0.3); line-height: 1.5;">
+                    const seeds = user.likes.slice(0, 4);<br>
+                    const wave = await Aether.analyze(seeds);<br>
+                    if (wave.vibe === 'dark') {<br>
+                    &nbsp;&nbsp;return fetchRelated(depth: 10);<br>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 norius. Open Source Software (MIT License).</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

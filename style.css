@@ -320,6 +320,8 @@ a:hover ~ #cursor, button:hover ~ #cursor {
 .social-row:hover .social-btn.telegram { box-shadow: inset 0 0 20px rgba(42, 171, 238, 0.05); border-color: rgba(42, 171, 238, 0.2); }
 .social-row:hover .social-btn.discord { box-shadow: inset 0 0 20px rgba(88, 101, 242, 0.05); border-color: rgba(88, 101, 242, 0.2); }
 .social-row:hover .social-btn.steam { box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.15); }
+.project-aether:hover .social-btn { box-shadow: inset 0 0 20px rgba(99, 102, 241, 0.08); border-color: rgba(99, 102, 241, 0.3); }
+.project-aether:hover .social-btn { box-shadow: inset 0 0 20px rgba(99, 102, 241, 0.08); border-color: rgba(99, 102, 241, 0.3); }
 
 /* Toast */
 #toast-container {
